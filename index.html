@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        header {
+            margin: 0%;
+            display: inline-flex;
+            height: 90px;
+            background-color: #12c0faa8;
+            width: max-content;
+        }
+
+        .logo {
+            margin: 20px 0px 0px 20px;
+        }
+
+        .menu {
+            margin: 50px 0px 0px 11px;
+            font: 1em sans-serif;
+        }
+
+        .menu a {
+            padding: 5px 10px 5px 10px;
+            margin: 20px;
+            border: 2px solid rgb(14, 14, 14);
+            text-decoration: none;
+            color: rgb(20, 69, 245);
+            background-color: aqua;
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+
+        }
+
+        .menu a:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 90%;
+            width: 0%;
+            height: 7px;
+            background-color: rgba(246, 254, 255, 0.07);
+            transition: all 400ms linear;
+
+        }
+
+        .menu a:hover:before {
+
+            width: 100%;
+            background-color: rgb(243, 161, 29);
+        }
+
+        .common {
+            width: 90%;
+            margin-left: 50px;
+
+        }
+
+        #active {
+            padding: 15px;
+            color: rgb(22, 21, 20);
+            border: 5px solid black;
+            background-color: rgb(245, 213, 153);
+        }
+
+
+        .headimage video {
+            background-color: rgb(160, 157, 152);
+            display: block;
+            align-items: center;
+            padding:0px;
+            margin:auto;
+            border: 2px solid rgb(195, 197, 186);
+        }
+
+
+        #media-image {
+            display: block;
+            margin: 5px;
+            border: 10px solid rgb(234, 222, 222);
+
+        }
+
+        #media {
+            background-color: rgba(249, 249, 249, 0.161);
+            display: block;
+            position: fixed;
+            font-size: 200px;
+            border-radius: 30px;
+            margin: 0px;
+            border: 6px solid rgb(213, 210, 215);
+        }
+
+        #search {
+            align-items: center;
+            width: max-content;
+            margin-top:40px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        input {
+            margin: 5px 6px 6px 6px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        button{
+            margin: 5px 2px 4px 2px;
+            
+        }
+        
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 55px 20px 70px 40px;
+            width: 75%;
+
+        }
+
+        .content h1 {
+            
+            font-size: 35px;
+            padding: 45px;
+            background-color: rgb(228, 225, 241);
+            border-radius: 80px;
+            border: 7px solid rgb(239, 201, 162);
+        }
+
+        .content p {
+            font-size: 20px;
+            border-radius: 80px;
+            padding:32px;
+            background-color: rgb(244, 236, 229);
+            border: 7px solid rgb(194, 192, 246);
+        }
+
+        .headimage h1 {
+            margin: auto;
+            padding: 20px;
+            align-items: center;
+            border: 7px solid rgb(210, 197, 197);
+            border-radius: 80px;
+            font-size: 30px;
+            text-transform: capitalize;
+            background-color: rgb(235, 190, 130);
+            width:fit-content;
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" width="170px" height="60px">
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="home.html" id="active">HOME</a>
+                <a href="Diseases.html" target="_BLANK">DISEASES</a>
+                <a href="precaution.html" target="_BLANK">PRECAUTIONS</a>
+                <a href="About-us.html" target="_BLANK">ABOUT US</a>
+                <a href="Contact-us.html" target="_BLANK">CONTACT US</a>
+            </ul>
+        </div>
+    </header>
+    <p id="media">
+        <a href="https://www.facebook.com"><img id="media-image" src="facebook.jfif" width="60" height="70"></a>
+        <a href="https://www.linkedin.com"><img id="media-image" src="linkedin.jfif" width="60" height="70"></a>
+        <a href="https://twitter.com"><img id="media-image" src="tweeter.png" width="60" height="70"></a>
+        <a href="https://web.telegram.org"><img id="media-image" src="telegram.png" width="60" height="70"></a>
+        <a href="https://accounts.google.com"><img id="media-image" src="google+.png" width="60" height="70"> </a>
+    </p>
+    <div id="container">
+        <div id="search">
+            <form method="GET" action="https://www.google.com/search" target="_blank">
+                <input name="q" type="text" placeholder="Search here" autocomplete="off">
+                <button>
+                    <img src="search.jpg" width="60" height="40">
+                </button>
+            </form>
+        </div>
+        <div class="headimage">
+            <u>
+                <h1>Understanding India's mental health - Ideas for India</h1>
+            </u>
+            <video src="vedio.mp4" controls autoplay width="390px" height="280px">
+                <p>
+                    Figure:2.1
+                </p>
+        </div>
+        <div class="content">
+            <h1>
+                Mental health in India: A perspective
+            </h1>
+            <p>
+                Mental health is a major concern worldwide and India is not far behind in sharing this. If we evaluate
+                developments in the field of mental health, the pace appears to be slow. Dr. Brock Chisholm, the first
+                Director-General of the World Health Organization (WHO), in 1954, had presciently declared that “without
+                mental health there can be no true physical health.”[1] More than 60 years later, the scenario has not
+                altered substantially. About 14% of the global burden of disease is attributed to neuropsychiatric
+                disorders. The burden of mental disorders is likely to have been underestimated because of inadequate
+                appreciation of the inter-play between mental illness and other health disorders.[2] There remain
+                considerable issues of priority-setting based on the burden of health problems and of addressing
+                inequalities in relation to determinants and solutions for health problems.</p>
+
+            <p> Progress in mental health service delivery has been slow in most low- and middle-income countries.
+                Barriers include the existing public-health priorities and its influence on funding; challenges to
+                delivery of mental health care in primary-care settings; the low numbers of those trained in mental
+                health care; and the lack of mental health perspective in public-health leadership.[3] There have been
+                numerous calls for invoking political will, for enhancing advocacy and for galvanizing community
+                participation; all with scant improvement in outcomes.</p>
+
+            <p> Thus, it becomes now opportune to explore the paradigm of mental health awareness as a means of
+                combating stigma, enhancing prevention, ensuring early recognition, and also stimulating simple and
+                practical interventions within the community. Today there are opportunities in terms of growing
+                acknowledgement of mental disorders as key targets of global health action, as well as of leveraging new
+                technologies particularly internet, big data and cell phones in amplifying simple field interventions
+                found successful in primary care and other echelons.
+            </p>
+            <h1>MENTAL HEALTH AWARENESS.</h1>
+            <p>Mental health awareness campaigns have yielded positive outcomes. Some of the strategies undertaken to
+                target awareness and address stigma around mental illness include participation by family members,
+                sensitization to treatment and social inclusion. Lack of knowledge about the mental illnesses poses
+                a challenge to the mental health care delivery system. Research has highlighted the role of
+                community-based systems in low-income countries and has also yielded positive results in creating
+                awareness, thereby impacting participation.</p>
+
+            <p> Awareness and health literacy are two sides of the same coin. Stigma and discrimination are negative
+                consequences of ignorance and misinformation.There are a few studies which have measured mental
+                health literacy in the Indian context. One study found mental health literacy among adolescents to be
+                very low, i.e. depression was identified by 29.04% and schizophrenia/psychosis was recognized only by
+                1.31%. Stigma was noted to be present in help-seeking.</p>
+            <p> These findings reinforce the need to increase awareness of mental health. Mental health literacy is a
+                related concept which is increasingly seen as an important measure of the awareness and knowledge of
+                mental health disorders. Health literacy has been described as “ability to access, understand, and use
+                the information to promote and maintain good health.”[10] Mental health literacy encompasses
+                recognition, causes, self-help, facilitation of professional intervention, and navigating the
+                information highway [Table 1]. Attitudes which hinder recognition and appropriate help-seeking can be
+                counter-acted by information which is already readily available in the public domain. There are plenty
+                of examples of awareness positively impacting mental health outcomes like the Norwegian campaign to
+                reduce the duration of untreated psychosis.</p>
+
+            <h1>
+                INDIAN SCENARIO
+            </h1>
+
+            <p>
+                The WHO has defined sustainable development goals and elaborated the impact of mental illnesses and
+                suicide on them. The suicide rate in India in 2015 at 15.7/100,000 is higher than the regional average
+                of 12.9 and the global average of 10.6.[14] Suicide is the leading cause of death among those aged 15–29
+                in India.[15] There remains a massive unaddressed need within the population.
+            </p>
+            <p>
+
+                The treatment gap, as measured by the absolute difference between the prevalence of mental illnesses and
+                the treated proportion, has been found to be 76%–85% in less-developed countries.[16] One of the major
+                reasons attributed to such a wide treatment gap is the problem of inadequate resources. In India,
+                inadequacy exists in infrastructure as well as in human resources.[17] Despite improvements in various
+                health indicators, India contributes disproportionately to the global burden of disease. Our health
+                indicators compare unfavorably with other middle-income countries and India's regional neighbors. A
+                large proportion of the population ends up impoverished because of high out-of-pocket health-care
+                expenditures and suffers the adverse consequences of the poor quality of care.[18] Task-shifting to
+                nonspecialist community health workers has been recommended as an effective strategy for delivery of
+                efficacious treatments in low-resource settings.[19] Given the dire shortage in numbers of
+                psychiatrists, psychologists, psychiatric nurses, and social workers; piggy-backing on primary care
+                systems and employing innovative force-multipliers are future courses of action.
+            </p>
+            <h1>
+                ROADMAP FOR MENTAL HEALTH AWARENESS</h1>
+            <p>
+                For the large Indian population to be involved in its own mental health, the only way forward is through
+                enhancing mental health awareness which will generate its own demand. With rising awareness, it can be
+                expected that early recognition and access to treatment will follow, as will the adoption of preventive
+                measures. It can also be expected that with enlarging awareness in a democratic society, advocacy,
+                leveraging of political will, funding, and cross-synergies shall follow. It is envisaged that bulk of
+                the awareness contributions shall flow from the following six platforms [Figure 1].
+
+            </p>
+            <h1>
+                Conventional media
+            </h1>
+            <p>
+                Media has been the cornerstone of the previous action in the field of mental health awareness. Celebrity
+                endorsements, like the recent one by actress Deepika Padukone who shared her experience of depression,
+                together with succinct tag-lines of advertisements and content-rich narrations and documentaries; have
+                been the mainstay of media drives so far.
+            </p>
+            <p>
+                Making evidence-based mental health information easily available to journalists and other content
+                providers like internet portals from trusted and reliable sources like Indian Psychiatry Society,
+                research organizations, medical colleges, etc., through their websites is a relatively simple step.
+                Accessibility of simply translated jargon-free content in various regional languages in written and
+                spoken forms will go a long way. It also behoves professionals in the mental health domain to take the
+                lead in engaging and partnering with the media. Encouraging recovered patients to make their success
+                stories accessible to all shall make good the paucity of authentic narratives.
+            </p>
+            <h1>Government programs</h1>
+            <p>
+                Despite some caviling about the quantum, the government remains the biggest single spender in the mental
+                health sector. While most new interventions remain isolated and confined to urban areas, it is only the
+                public health system through large programs which can reach the rural masses. Apart from the National
+                and District Mental Health Programs, the National Rural Health Mission is on its way to becoming the
+                vehicle for delivering mental health as a part of integrated primary care at the cutting edge of the
+                public healthcare system. Seeing that it partners with existing private and alternative care providers
+                in a nonthreatening manner, shall help such large interventions synergize and succeed.
+            </p>
+
+
+            <h1> Educational system</h1>
+            <p> Most chronic and debilitating mental illnesses have their onset before 24 years of age when most are
+                a part
+                of the educational system. From including mental health narratives in curricula toward,
+                de-stigmatization,
+                removing discrimination and early detection, to empowering stakeholders for early detection and
+                simple
+                interventions; the educational system yields myriad opportunities for enhancing mental health
+                awareness.
+            </p>
+            <h1> Industry</h1>
+            <p> The organized sector suffers significant loss of effective workforce through mental ill-health. Not
+                only as
+                a part of corporate social responsibility but also to maintain productivity, it becomes important to
+                engage
+                with mental health awareness in a concerted fashion.</p>
+
+            <h1> Internet, social media and cellphones</h1>
+            <p>Hand-held devices and the social media can truly be game-changers in the propagation of effective
+                mental
+                health interventions through focussed amplification, and not just in increasing information. With
+                the
+                greater utilization of big data, the understanding of subtle and distributed patterns over large
+                volumes
+                shall inform decision making.</p>
+
+            <h1>Crowd-sourcing</h1>
+            <p> The ultimate convergence of information and technology in a free society results in crowd-sourcing which
+                breaks down barriers of geography, historical inequities, and economies of scale. It is the true
+                involvement
+                of communities real and virtual, harnessed to make a change. Thus, dynamic ideas of individuals can
+                synergize with the success stories of nongovernmental organizations to amplify them across geographies
+                and
+                time. Crowd-funding is a successful model in testing radical ideas which flounder outside the
+                mainstream.
+            </p>
+
+            <h1> CONCLUSION </h1>
+            <p> Considering that most of the earlier strategies to enhance mental health have not succeeded over the
+                past
+                six decades or more in less-developed countries, the time has come to take on a new approach with
+                renewed
+                vigor. Mental health awareness can become both the means and the way of ending this apathy.
+                Progressive
+                government policies based on evidence-based approaches, an engaged media, a vibrant educational
+                system,
+                a
+                responsive industry, aggressive utilization of newer technologies and creative crowd-sourcing might
+                together
+                help dispel the blight of mental illnesses.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

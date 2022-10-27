@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <style>
+        nav {
+            margin: 0%;
+            display: inline-flex;
+            height: 90px;
+            background-color: #12c0faa8;
+            width: max-content;
+        }
+
+        .logo {
+            margin: 20px 0px 0px 20px;
+        }
+
+        .menu {
+            margin: 50px 0px 0px 11px;
+            font: 1em sans-serif;
+        }
+
+        .menu a {
+            padding: 5px 10px 5px 10px;
+            margin: 20px;
+            border: 2px solid rgb(14, 14, 14);
+            text-decoration: none;
+            color: rgb(20, 69, 245);
+            background-color: aqua;
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+
+        }
+
+        .menu a:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 90%;
+            width: 0%;
+            height: 7px;
+            background-color: rgba(246, 254, 255, 0.07);
+            transition: all 400ms linear;
+
+        }
+
+        .menu a:hover:before {
+
+            width: 100%;
+            background-color: rgb(243, 161, 29);
+        }
+
+        #active {
+            padding: 15px;
+            color: rgb(22, 21, 20);
+            border: 5px solid black;
+            background-color: rgb(245, 213, 153);
+        }
+
+        body {
+            width: fit-content;
+        }
+
+        #form {
+            text-align: center;
+            border: 20px solid rgba(197, 146, 215, 0.895);
+            padding: 10%;
+            font-size: 30px;
+            font-weight: 900;
+            background-color: antiquewhite;
+        }
+
+        #submit {
+            margin-top: 25px;
+            display: inline-block;
+            border: 3px solid red;
+            font-size: 20px;
+        }
+
+        #box {
+            border: 3px solid rgb(134, 155, 239);
+            font-size: 25px;
+            text-transform: capitalize;
+            
+        }
+        
+        input {padding: 5px;
+            border: 3px solid rgb(125, 163, 252);
+            background-color: rgb(225, 219, 219);
+            text-transform: capitalize;
+            font-weight: 550;
+            font-size: 15px;
+        }
+        #concern{text-transform: capitalize;
+            background-color: rgb(225, 219, 219);
+            border: 3px solid rgb(125, 163, 252);
+            padding: 5px;
+            font-size: 20px;
+        }
+        textarea{
+            background-color: rgb(225, 219, 219);
+            border: 3px solid rgb(125, 163, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" width="150px" height="50px">
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="home.html" target="_BLANK">HOME</a>
+                <a href="Diseases.html" target="_BLANK">DISEASES</a>
+                <a href="precaution.html" target="_BLANK">PRECAUTIONS</a>
+                <a href="About-us.html" target="_BLANK">ABOUT US</a>
+                <a href="Contact-us.html" id="active">CONTACT US</a>
+            </ul>
+        </div>
+    </nav>
+    <h1>
+        <form action="backend.php" id="form">
+            Name : <input "tpye=" text " name=" myname"><br><br>
+            Phone No:<input type="number" name="myclass"><br><br>
+            Adhar / Other-Id :<input type="number" name="myrollno"><br><br>
+            Email :<input type="text" name="mysection"><br><br>
+            D.O.B : <input type="date" id="box" name="myDOB"><br><br>
+            Gender : Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+            other <input type="radio" id="box" name="mygender"><br><br>
+            Nationality :<input type="text" name="mynationality"><br><br>
+            Concern : <select name="Stream" id="concern">
+                <option value="PCB" id="box">resperatory</option>
+                <option value="PCM" id="box">cardio</option>
+                <option value="Commerse with Math" id="box">neurological</option>
+                <option value="Commerse" id="box">genetic</option>
+                <option value="Arts" id="box">disability</option>
+            </select><br><br>
+            Comment :<br><br><textarea name="mytext" rows="20" ,colms="40"></textarea><br><br><br><br>
+            <center> I deleclare that the Above given details are ture as per my knowledge.
+                :<input type="checkbox" name="mydeclaration"><br><br><br><br><br><br>
+                SUBMIT :<Br><input type="submit" id="submit" value="Submit now">
+                <br><br>Reset :<br><input type="reset" id="submit" value="Reset now">
+            </center>
+
+        </form>
+    </h1>
+</body>
+
+</html>

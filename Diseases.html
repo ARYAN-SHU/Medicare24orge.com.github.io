@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Diseases</title>
+  <style>
+    body{
+      width: fit-content;
+    }
+    nav {
+      margin: 0%;
+      display:inline-flex;
+      height: 90px;
+      background-color: #12c0faa8;
+      width: max-content;
+    }
+
+    .logo {
+      margin: 20px 0px 0px 20px;
+    }
+
+    .menu {
+      margin: 50px 0px 0px 11px;
+      font: 1em sans-serif;
+    }
+
+    .menu a {
+      padding: 5px 10px 5px 10px;
+      margin: 20px;
+      border: 2px solid rgb(14, 14, 14);
+      text-decoration: none;
+      color: rgb(20, 69, 245);
+      background-color: aqua;
+      font-size: 15px;
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    .menu a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 90%;
+      width: 0%;
+      height: 7px;
+      background-color: rgba(246, 254, 255, 0.07);
+      transition: all 400ms linear;
+
+    }
+
+    .menu a:hover:before {
+
+      width: 100%;
+      background-color: rgb(243, 161, 29);
+    }
+    .common {
+      width: 90%;
+      margin-left: 50px;
+
+    }
+
+    .common h1 {
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      width:70%;
+      padding-left: 50px;
+      font-size: 35px;
+      border: 10px solid rgb(233, 213, 213);
+      border-radius: 200px;
+      background-color: rgb(236, 184, 101);
+    }
+
+    .common h2 {
+      margin-left: 50px;
+      padding-left: 50px;
+      font-size: 30px;
+      border: 5px solid#e9a5136d;
+      background-color: rgb(187, 236, 240);
+      border-radius: 40px;
+      width: 25%;
+    }
+
+    .summary {
+      display: inline-flex;
+
+    }
+
+    .summary p {
+      width: 50%;
+      margin-top: 45px;
+      font-weight: 545;
+      font-size: 20px;
+      padding: 10px;
+      border: 5px solid #12c0fa;
+      background-color: cornsilk;
+      border-radius: 25px;
+    }
+
+#content-image img {
+      padding: 2%;
+      margin-top: 80px;
+      border: 17px solid rgb(98, 97, 95);
+    }
+
+    #content-image {
+      margin-left:5%;
+      text-align: center;
+    }
+    #content-image em{
+      font-size: 20px;
+      font-weight: 700;
+      padding: 13px;
+      border: 4px solid rgb(246, 185, 110);
+      background-color: rgb(246, 229, 186);
+    
+    }
+
+    li {
+      margin-left: 30px;
+      font-weight: 545;
+      font-size: 20px;
+      padding: 19px;
+      border: 5px solid #e2d9b4;
+      background-color: rgb(208, 223, 249);
+      border-radius: 25px;
+      width: 15%;
+    }
+
+    #active {
+      padding: 15px;
+      color: rgb(22, 21, 20);
+      border: 5px solid black;
+      background-color: rgb(245, 213, 153);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" width="150px" height="50px">
+    </div>
+    <div class="menu">
+      <ul>
+        <a href="index.html" target=_BLANK>HOME</a>
+        <a href="Diseases.html" id="active">DISEASES</a>
+        <a href="precaution.html" target="_BLANK">PRECAUTIONS</a>
+        <a href="About-us.html" target="_BLANK">ABOUT US</a>
+        <a href="Contact-us.html" target="_BLANK">CONTACT US</a>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div class="thought">
+    <img src="thought.jpg" width="400" height="320">
+    <img src="thought2.jpg" width="400" height="320">
+    <img src="thought1.png" width="400" height="320">
+    <img src="thought4.jpg" width="400" height="320">
+    <div class="survey">
+      <img src="diseases survey2.jpg" width="300" height="400">
+    </div>
+  </div> -->
+  <br><br><BR><BR><BR>
+  <div class="common">
+    <u>
+      <h1>Top 10 Common Deadliest Diseases in India</h1>
+    </u><br>
+    <div class="summary">
+      <p>
+        Stressful lifestyles, fast-paced life, and inadequate healthcare knowledge have affected many people's
+        health in India.
+        Unluckily, this has turned into fatal events, leaving the family marooned in many cases. Over the past few
+        years, the
+        healthcare industry has changed a lot. Still, many deadly diseases are occurring in India every year. The
+        treatment
+        costs for these diseases are also high. You should try to enhance your knowledge by knowing the names of
+        diseases. If
+        you have a family history of various deadly types of diseases, then you can purchase a health insurance
+        policy along
+        with critical insurance to stay protected against the most dangerous diseases.
+
+        If you didn’t take any step in this direction, this is the time to start it. The deadliest diseases in India
+        may happen
+        at various body parts and based on their severity, they may turn critical.</p>
+      <div id="content-image">
+        <img src="survey.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.1</em>
+      </div>
+    </div>
+    <h1> 1. COVID-19</h1>
+
+    <div class="summary">
+      <p> The COVID-19 or coronavirus is one of the top 10 deadliest infectious diseases globally. This disease has
+        hit the world
+        in 2019 and affect many people. Nearly 5.24 lakh people in India have lost their lives in the past two
+        years. In 2020,
+        the government of India has launched two COVID-19 health insurance policies (Corona Kavach and Corona
+        Rakshak) that will
+        cover your entire medical and hospitalization expenses.
+
+        The disease is transmitted from an infected person (through droplets when he coughs, sneezes, or speaks) to
+        others.
+        Though this virus produces mild respiratory illness, it can be severe in people who have cardiovascular
+        issues, diabetes
+        and chronic respiratory diseases.
+      </p>
+      <div id="content-image">
+        <img src="covid102.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.2</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of COVID-19</h2>
+    <ul>
+      <li> Severe cold</li>
+      <li> Headache</li>
+      <li>Fever</li>
+      <li> Body Pain</li>
+      <li> Loss of taste and smell</li>
+      <li> Scratchy throat</li>
+    </ul>
+
+    <h2> Preventive Measures of COVID-19</h2>
+    <ul>
+      <li> Vaccination</li>
+      <li> Follow a healthy diet</li>
+      <li> Wash your hands frequently</li>
+      <li> Maintain social distancing</li>
+      <li> Wear a mask while going outside</li>
+
+    </ul>
+    <h1> 2. Cardiovascular Diseases (CVD)</h1>
+    <div class="summary">
+      <p>Cardiovascular diseases affect your heart and they are one
+        of the pivotal causes of death in India.</p>
+      <div id="content-image">
+        <img src="cardio.jpg" alt="human lungs" width="300" height="300">
+        <br><br><br><em>figure2.3</em>
+      </div>
+    </div>
+
+    <h2> Symptoms of Cardiovascular Diseases</h2>
+    <ul>
+      <li> Shortness of </li>
+      <li> Chest pain and discomfort</li>
+      <li> Pain in the upper abdomen, neck, back, throat, jaw</li>
+      <li> Pain or numbness in your arms, and legs</li>
+    </ul>
+
+    <h2>Causes of Cardiovascular Diseases</h2>
+    <ul>
+      <li> Excessive smoking</li>
+      <li>Sedentary lifestyle</li>
+      <li> Improper diet</li>
+      <li> Hereditary</li>
+      <li> High BP or Cholesterol</li>
+      <li> Obese</li>
+      <li> Family history of CVD</li>
+    </ul>
+    <div class="summary">
+      <p> To prevent CVD, eat healthy food items like fish,
+        walnuts, almonds, oats, carrots, sweet potatoes, red
+        peppers,
+        tomatoes, kale, broccoli, etc. Also, do regular exercises
+        to maintain a healthy weight.</p>
+      <div id="content-image">
+        <img src="preventcardio.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.4</em>
+      </div>
+    </div>
+
+    <h1> 3. Diabetes</h1>
+    <div class="summary">
+      <p> This is one of the common diseases in humans.
+        Two types of diabetes are there (type 1 and type 2). In type 1
+        diabetes,
+        your pancreas doesn’t produce adequate insulin.
+        In type 2 diabetes, insulin produced by your body is not
+        effectively
+        utilized.</p>
+      <div id="content-image">
+        <img src="diadetes.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.5</em>
+      </div>
+    </div>
+
+    <h2> Symptoms of Diabetes</h2>
+    <ul>
+      <li> Frequent urge to urination</li>
+      <li>Enhanced hunger and thirst</li>
+      <li> Weight loss</li>
+      <li> Extreme fatigue</li>
+    </ul>
+
+    <h2>Preventive Measures for Diabetes</h2>
+    <ul>
+      <li> Do physical activities </li>
+      <li> Follow a healthy diet</li>
+      <li> Reduce your carbohydrate intake
+      <li> Quit smoking and restrict alcohol consumption</li>
+      <li> Monitor your blood glucose level</li>
+    </ul>
+
+    <h1>4. Respiratory Diseases</h1>
+    <div class="summary">
+      <p> This disease may lead to death,
+        especially in children. Asthma, tuberculosis, bronchitis, pneumonia, etc.,
+        are some of
+        the most common respiratory diseases.
+        Air pollution is one of the prime causes of respiratory diseases.</p>
+      <div id="content-image">
+        <img src="lungs12.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.6</em>
+      </div>
+    </div>
+
+    <h2> Causes of Respiratory Diseases</h2>
+    <ul>
+      <li> Excessive exposure to toxic substances</li>
+      <li> Dust</li>
+      <li> Air pollution</li>
+      <li> Smoking</li>
+      <li> Lower immunity levels</li>
+    </ul>
+
+    <h2> Symptoms of Respiratory Diseases</h2>
+    <ul>
+      <li> Cough</li>
+      <li> Sneezing</li>
+      <li> Nasal congestion</li>
+      <li> Fever</li>
+      <li> Shortness of breath</li>
+
+    </ul>
+    <h2>Preventive Measures for Respiratory Diseases</h2>
+    <ul>
+      <li> If you need to travel in polluted areas, cover your face</li>
+      <li> Quit smoking</li>
+      <li> To enhance your immunity level, take vitamins and minerals</li>
+      <li> Do deep breathing exercises</li>
+    </ul>
+
+
+    <h1> 5. Malignant and Other Tumors</h1>
+    <div class="summary">
+      <p> Tumors are also common and cause
+        death in people. People experience the symptoms of tumors in the later
+        stage.
+        Initially, it starts with a painless lump.</p>
+      <div id="content-image">
+        <img src="tumer.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.7</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of Malignant Tumor</h2>
+    <ul>
+      <li> Painless lump</li>
+    </ul>
+
+
+    <h2> Preventive Measures for Malignant Tumor</h2>
+    <ul>
+      <li> Follow regular life standards</li>
+      <li> Maintain a healthy weight</li>
+      <li>Get regular immunization</li>
+      <li> Stay active physically</li>
+      <li> Quit smoking</li>
+    </ul>
+
+    <div class="summary">
+      <p> Cancer is the deadliest disease and you need to invest a lot of money in its treatments. But if you have a
+        health
+        policy, this will reduce your financial burden to some extent.</p>
+
+    </div>
+    <h1> 6. Tuberculosis (TB)</h1>
+    <div class="summary">
+      <p> This infectious disease
+        mainly affects your lungs. But with advanced medical treatment, this disease is
+        curable and
+        preventable.</p>
+      <div id="content-image">
+        <img src="tuberculosis.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.8</em>
+      </div>
+    </div>
+
+    <h2> Symptoms of Tuberculosis</h2>
+    <ul>
+      <li> Fatigue</li>
+      <li> Blood while coughing</li>
+      <li> Fever</li>
+      <li> Chills</li>
+      <li> Night sweats</li>
+      <li> Loss of appetite</li>
+      <li> Unexplained weight loss</li>
+      <li> Causes of Tuberculosis
+      </li>
+    </ul>
+
+    <h2>Causes of Tuberculosis</h2>
+    <ul>
+      <li> Poor immune system</li>
+      <li> Traveling or living in certain </li>
+      <li> Friends and family of the infected person</li>
+    </ul>
+
+    <h2>Preventive Measures for Tuberculosis</h2>
+    <ul>
+      <li> Stay away from people who are already infected with the disease</li>
+      <li> High risks should get screened</li>
+      <li> Vaccinations to stop the spread of the disease</li>
+    </ul>
+
+    <h1> 7. Alzheimer’s Disease and Other Dementias</h1>
+    <div class="summary">
+      <p>Though in Alzheimer’s you may
+        lose your memory, in some cases, your life is also threatened.</p>
+      <div id="content-image">
+        <img src="Alz.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.9</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of Alzheimer’s Disease</h2>
+    <ul>
+      <li> Difficulty in accomplishing daily tasks</li>
+      <li> Misplacing things</li>
+      <li> Problems with words in writing or speaking</li>
+      <li> Inferior judgment and decision making</li>
+      <li> Inability to manage budget</li>
+    </ul>
+
+    <h2>Causes of Alzheimer’s Disease</h2>
+    <ul>
+      <li> Family history</li>
+      <li> Old age</li>
+      <li> Unwholesome lifestyle</li>
+      <li> Previous head trauma</li>
+      <li> Leading an unsocial life for a long period</li>
+    </ul>
+
+    <h2>Preventive Measures for Alzheimer’s Disease</h2>
+    <ul>
+      <li> Avoid fatty food (Meat, dairy products, olive oil, lean fish, etc.)</li>
+      <li>Follow a heart-healthy diet (incorporate fruits and veggies in your diet)</li>
+      <li> Discard smoking</li>
+      <li> Control of cardiovascular risk factors</li>
+    </ul>
+
+    <h1>8. Malaria</h1>
+    <div class="summary">
+      <p> Malaria is one of the common diseases in India which is caused by Plasmodium parasite transmission by
+        mosquitoes.</p>
+      <div id="content-image">
+        <img src="malaria.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.10</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of Malaria</h2>
+    <ul>
+      <li> Fever</li>
+      <li>Muscle ache</li>
+      <li> Nausea</li>
+      <li> Abdominal pain</li>
+      <li> Headache</li>
+      <li> Diarrhea</li>
+    </ul>
+
+    <h2>Preventive Measures for Malaria</h2>
+    <ul>
+      <li> Use insect repellent</li>
+      <li> Wear full-sleeved clothes while going</li>
+      <li> Use bed net while sleeping</li>
+      <li> Eat food items like carrot, papaya, beetroots, fruits especially citrus fruits</li>
+    </ul>
+
+
+    <h1>9. Diarrheal Diseases</h1>
+    <div class="summary">
+      <p>Diarrhea happens when you pass loos
+        e stools more than three times in a day. This minimizes the water and
+        salt levels in
+        your body and makes you weak. If it continues for several days
+        , you may experience dehydration.</p>
+      <div id="content-image">
+        <img src="diarrea.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.11</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of Diarrheal Disease</h2>
+    <ul>
+      <li> Watery stool</li>
+      <li> Mucus in the stool</li>
+      <li> Bloating</li>
+      <li> Nausea</li>
+      <li> Abdominal pain, cramps</li>
+      <li> Blood in the stool</li>
+    </ul>
+
+    <h2> Causes of Diarrheal Diseases</h2>
+    <ul>
+      <li> Unhygienic water</li>
+      <li> Areas with poor sanitation facilities</li>
+      <li> Malnourishment</li>
+      <li> Inferior immune system</li>
+    </ul>
+
+
+    <h1>10. Chronic Obstructive Pulmonary Disease</h1>
+    <div class="summary">
+      <p>Chronic Obstructive Pulmonary
+        Disease or COPD is a long-term lung disease that causes breathing difficulties
+        in
+        patients.</p>
+      <div id="content-image">
+        <img src="COPD.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.12</em>
+      </div>
+    </div>
+
+    <h2>Symptoms of COPD</h2>
+    <ul>
+      <li>Wheezing</li>
+      <li>Chest stiffness</li>
+      <li> Lethargy</li>
+      <li> Frequent respiratory infections</li>
+      <li>Inflammation in ankles, legs or feet</li>
+      <li>Shortness of breath</li>
+    </ul>
+
+
+    <h1>Causes of Chronic Obstructive Pulmonary Disease</h1>
+    <ul>
+      <li> or second-hand smoke</li>
+      <li>Chemical fumes and various lung irritants</li>
+      <li>Family history of COPD</li>
+      <li>Respiratory infections in childhood</li>
+      </li>
+    </ul>
+
+    <h1> Preventive Measures for COPD</h1>
+    <ul>
+      <li>Avoid smoking </li>
+      <li>Know your family history</li>
+      <li>Stay protected against fumes, and chemicals at home or work</li>
+      <li>Avoid air pollution</li>
+    </ul>
+
+
+    <h1> Buy Health Insurance and Stay Financially Protected</h1>
+    <div class="summary">
+      <p> A health insurance policy will offer you financial support to manage your treatment against these deadliest
+        conditions.
+        So, purchase a health policy to strengthen and secure your life and stay protected against various
+        life-threatening</p>
+
+    </div>
+
+    <h1> Conclusion</h1>
+    <div class="summary">
+      <p> We mentioned the list of diseases that can be life-threatening if not treated properly. Improper knowledge
+        and
+        unhygienic living conditions are the prime causes of such diseases. You should try to take preventive
+        measures to stay
+        protected against these diseases. Also, buy a health insurance plan after thorough research to get financial
+        aid to deal
+        with these diseases.
+
+
+
+      <div id="content-image">
+        <img src="conclusion.jpg" alt="human lungs" width="300" height="200">
+        <br><br><br><em>figure2.13</em>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
